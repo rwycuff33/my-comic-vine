@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-- '0.10'
 - '0.11'
 - '0.12'
 before_script:
@@ -10,5 +9,5 @@ services: mongodb
 deploy:
   provider: heroku
   api_key:
-    secure: jY8Mqg5shputQAVLBE46rwWhFrgFq6NJwOUsbr6FnjXdzoplS54Hne/X5ehPR3p5t/o0aWPpwYMENEYF0s8T1DBNyy8XSOgXxfyXg/pd5uoX08MIoulJuBRwoPoGBw0xXy/6WJLp5sjdYL7yHIeFIaseOm92ffqATC8jLaSdkOc=
+    secure: YfjIuOk/HGv0xy/EPSiSYu/oID2KO0g7qo1BKy+Ukj/bjrbl12tItqNYNxVNj3vJvzickLYWsGn2vecQnnAY8Dfp6fWNl11j7JjhNQJDxQhLb+MEDQRclhDSmcsjXlU+WOxtrk0ot3eg6QlGw2vj68c27bOYqY6bSb1bB3Q0Zro=
   app: my-comic-vine

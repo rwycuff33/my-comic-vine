@@ -1,7 +1,7 @@
-my-comic-vine/node_modules/
-bower_components/
+node_modules/
+client/bower_components/
 styles/css
 .idea/
 dist/
 .sass-cache/
-my-comic-vine/npm-debug.log
+npm-debug.log

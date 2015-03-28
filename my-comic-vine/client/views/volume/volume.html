@@ -1,0 +1,22 @@
+<h1>
+  {{ctrlVolume.volume.name}}
+</h1>
+<volume-actions volume="ctrlVolume.volume"></volume-actions>
+
+<h2>Description</h2>
+<strong>Publisher: </strong>{{ctrlVolume.volume.publisher.name}}
+<div ng-bind-html="ctrlVolume.volume.description"></div>
+
+<h2>Issues</h2>
+<div ng-repeat="issue in ctrlVolume.issues" class="issue">
+  <a ui-sref="issue({issueId: issue.id})"><img ng-src="{{issue.image.thumb_url}}"></a>
+  <div class="issue-details">
+    <h4>{{issue.volume.name}} {{issue.issue_number}}</h4>
+
+    {{issue.name}}
+
+    {{issue.store_date}}
+
+    <issue-actions issue="issue"></issue-actions>  
+  </div>
+</div>

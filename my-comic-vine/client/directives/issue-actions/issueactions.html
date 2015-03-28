@@ -1,0 +1,14 @@
+<div class="issue-actions">
+  <label>
+    <input type="checkbox" ng-model="issue.read" ng-change="issueActions.updateIssue(issue)">
+    Read
+  </label>
+  <label>
+    <input type="checkbox" ng-model="issue.own" ng-change="issueActions.updateIssue(issue)">
+    Own
+  </label>
+  <label>
+    <input type="checkbox" ng-model="issue.want" ng-change="issueActions.updateIssue(issue)">
+    Want
+  </label>
+</div>

@@ -1,0 +1,11 @@
+<div ng-repeat="result in ctrlSearchResults.results">
+  <img ng-src="{{result.image.thumburl}}">
+  {{result.name}} -- {{result.resource_type}}
+  <a href="#">link {{result.id}}</a>
+</div>
+
+<!-- <div ng-repeat="result in vm.results" ng-switch on="result.resource_type">
+  <volume ng-switch-when="volume"></volume>
+  <issue ng-switch-when="issue"></issue>
+  <div ng-switch-default>{{result.name}}</div>
+</div> -->

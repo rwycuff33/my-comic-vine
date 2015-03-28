@@ -1,0 +1,8 @@
+<div class="volume" style="display:inline-block">
+  <img ng-src="{{volume.image.thumb_url}}">
+  <a ui-sref="volume({id: volume.id})">{{volume.name}}</a>
+  ({{volume.start_year}}) -- {{volume.publisher.name}}
+
+  {{volume.isvisible}}
+  <volume-actions volume="volume"></volume-actions>
+</div>

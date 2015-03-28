@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.11'
+- '0.12'
+before_script:
+- npm install -g bower gulp
+- bower install
+services: mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: jY8Mqg5shputQAVLBE46rwWhFrgFq6NJwOUsbr6FnjXdzoplS54Hne/X5ehPR3p5t/o0aWPpwYMENEYF0s8T1DBNyy8XSOgXxfyXg/pd5uoX08MIoulJuBRwoPoGBw0xXy/6WJLp5sjdYL7yHIeFIaseOm92ffqATC8jLaSdkOc=
+  app: my-comic-vine

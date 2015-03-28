@@ -1,0 +1,5 @@
+<div class="volume-actions">
+  <select ng-model="volume.status" ng-options="status for status in volumeActions.statuses" ng-change="volumeActions.updateVolume(volume)"></select>
+  
+  <button ng-if="volume._id" ng-click="volumeActions.deleteVolume(volume)">Delete</button>
+</div>

@@ -1,0 +1,27 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0; }
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+.main-nav li {
+  display: inline-block;
+  margin: 8px 15px; }
+
+.page-container {
+  margin: 0 auto;
+  max-width: 600px;
+  display: block; }
+
+.issue {
+  display: inline-block;
+  width: 50%;
+  color: black; }
+  .issue:visited {
+    color: black; }
+  .issue img {
+    vertical-align: middle; }
+  .issue .issue-details {
+    display: inline-block; }

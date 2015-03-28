@@ -1,0 +1,38 @@
+.main-nav {
+  // position: fixed;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 8px 15px;
+  }
+}
+
+.page-container {
+  margin: 0 auto;
+  max-width: 600px;
+  display: block;
+}
+
+.issue {
+  display: inline-block;
+  width: 50%;
+
+  color: black;
+  &:visited {
+    color: black;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+
+  .issue-details {
+    display: inline-block;
+
+  }
+}

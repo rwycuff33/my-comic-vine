@@ -1,0 +1,19 @@
+<h1>
+  {{ctrlIssue.issue.volume.name}}
+  #{{ctrlIssue.issue.issue_number}}
+</h1>
+<issue-actions issue="ctrlIssue.issue"></issue-actions>
+
+<h2>Description</h2>
+<div ng-bind-html="ctrlIssue.issue.description"></div>
+
+<div><strong>Date: </strong>{{ctrlIssue.issue.store_date}}</div>
+<div><strong>Name: </strong>{{ctrlIssue.issue.name}}</div>
+
+<img ng-src="{{ctrlIssue.issue.image.thumb_url}}" />
+
+<button ng-show="!ctrlIssue.editComments" ng-click="ctrlIssue.editComments = true">Edit Comments</button>
+<div ng-show="!ctrlIssue.editComments" marked="ctrlIssue.issue.comments"></div>
+
+<textarea ng-show="ctrlIssue.editComments" ng-model="ctrlIssue.issue.comments"></textarea>
+<button ng-show="ctrlIssue.editComments" ng-click="ctrlIssue.saveIssue(ctrlIssue.issue)">Save</button>

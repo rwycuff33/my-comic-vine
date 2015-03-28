@@ -1,0 +1,7 @@
+{
+  "root": "/../",
+  "comicVine": {
+    "url": "http://www.comicvine.com/api",
+    "apiKey": "742f31ad75c7f40a75f7285c258dce84c1514237"
+  }
+}

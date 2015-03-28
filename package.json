@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./server/bin/www"
+    "start": "node ./server/bin/www",
+    "postinstall": "bower install" // && grunt build"
   },
   "dependencies": {
     "body-parser": "^1.12.2",
